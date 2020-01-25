@@ -10,13 +10,14 @@
 * Ubuntu Server 16.04 LTS (HVM), SSD Volume Type or higher
 * Create a new key pair - download the file (*.pem)
     * A key pair consists of a public key that AWS stores and a private key file that you store. Together, they allow you to connect to your instance securely. For Windows AMIs, the private key file is required to obtain the password used to log into your instance. For Linux AMIs, the private key file allows you to securely SSH into your instance.
-* Download Putty and PuttyGen
+* Download Putty, PuttyGen, WINSCP
     * Use PuttyGen to convert the *.pem file to *.ppk
     * Use Putty to SSH into the remote Ubuntu server
         * Session Tab: Set the hostname as ec2 instance name, Port as 22, connection type as SSH
         * Connection->SSH->Auth Tab: Select the create *.ppk (Putty Private Key) File
     * User name for Ubuntu instance is "ubuntu" by default
         * Other operating systems might have other credential - can find respective credentials on AWS website
+    * Use WinSCP to transfer files from Local Machine to Remote EC2 Server
 
 ## Bitcoin Regtest Node
 
