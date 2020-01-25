@@ -1,0 +1,55 @@
+ubuntu@ip-172-31-18-157:~$ bitcoin-cli -rpcuser=vinay -rpcpassword=fintech -rpcport=18443 getblock "35f30ea5f6f67c9b064a6e339dd5494af370088bb0d1d8ee10781af6c8c680ec"
+{
+  "hash": "35f30ea5f6f67c9b064a6e339dd5494af370088bb0d1d8ee10781af6c8c680ec",
+  "confirmations": 2,
+  "strippedsize": 215,
+  "size": 251,
+  "weight": 896,
+  "height": 101,
+  "version": 536870912,
+  "versionHex": "20000000",
+  "merkleroot": "91512186951141c8a97b8164e52a89d9f9af7188ba0873c973d9447bb4ca5363",
+  "tx": [
+    "91512186951141c8a97b8164e52a89d9f9af7188ba0873c973d9447bb4ca5363"
+  ],
+  "time": 1579298579,
+  "mediantime": 1579298578,
+  "nonce": 2,
+  "bits": "207fffff",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000000cc",
+  "nTx": 1,
+  "previousblockhash": "53bc713208025478ae2eb81365ccceb1ba55290c0eb4caa14ba7bd74bb2ba0c9",
+  "nextblockhash": "3855328d33c34d7a684d5601f4a8c3dc4d1bdf41cac3d7a0e3d9f7860c893088"
+}
+
+
+
+
+ubuntu@ip-172-31-18-157:~$ bitcoin-cli -rpcuser=vinay -rpcpassword=fintech -rpcport=18443 getblock "3855328d33c34d7a684d5601f4a8c3dc4d1bdf41cac3d7a0e3d9f7860c893088"
+{
+  "hash": "3855328d33c34d7a684d5601f4a8c3dc4d1bdf41cac3d7a0e3d9f7860c893088",
+  "confirmations": 1,
+  "strippedsize": 350,
+  "size": 495,
+  "weight": 1545,
+  "height": 102,
+  "version": 536870912,
+  "versionHex": "20000000",
+  "merkleroot": "89ba523b689309f685b716050e43cf54500cd2c2b0e744df44ffa168c4706916",
+  "tx": [
+    "fc5042c33a7abe0b87a320192feea4d4a7450850672d5a3973745889ae2d862b",
+    "9515bed73d3f1917bf651f00e56e86fe52b9455e7d6f0845094787ba0dfa1c55"
+  ],
+  "time": 1579379518,
+  "mediantime": 1579298578,
+  "nonce": 0,
+  "bits": "207fffff",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000000ce",
+  "nTx": 2,
+  "previousblockhash": "35f30ea5f6f67c9b064a6e339dd5494af370088bb0d1d8ee10781af6c8c680ec"
+}
+
+
+nTx - tells us number of transactions in a block

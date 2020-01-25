@@ -1,0 +1,36 @@
+ubuntu@ip-172-31-18-157:~$ bitcoin-cli -rpcuser=vinay -rpcpassword=fintech -rpcport=18443 gettxout "fc5042c33a7abe0b87a320192feea4d4a7450850672d5a3973745889ae2d862b" 0
+{
+  "bestblock": "3855328d33c34d7a684d5601f4a8c3dc4d1bdf41cac3d7a0e3d9f7860c893088",
+  "confirmations": 1,
+  "value": 50.00003280,
+  "scriptPubKey": {
+    "asm": "0 e6e0768d5239cc1446fbf32cd825adf05b511056",
+    "hex": "0014e6e0768d5239cc1446fbf32cd825adf05b511056",
+    "reqSigs": 1,
+    "type": "witness_v0_keyhash",
+    "addresses": [
+      "bcrt1qums8dr2j88xpg3hm7vkdsfdd7pd4zyzk34sshy"
+    ]
+  },
+  "coinbase": true
+}
+
+ubuntu@ip-172-31-18-157:~$ bitcoin-cli -rpcuser=vinay -rpcpassword=fintech -rpcport=18443 gettxout "9515bed73d3f1917bf651f00e56e86fe52b9455e7d6f0845094787ba0dfa1c55" 0
+{
+  "bestblock": "3855328d33c34d7a684d5601f4a8c3dc4d1bdf41cac3d7a0e3d9f7860c893088",
+  "confirmations": 1,
+  "value": 48.99996720,
+  "scriptPubKey": {
+    "asm": "0 58db024dd71efaf0184926a4c85be3023fa00804",
+    "hex": "001458db024dd71efaf0184926a4c85be3023fa00804",
+    "reqSigs": 1,
+    "type": "witness_v0_keyhash",
+    "addresses": [
+      "bcrt1qtrdsynwhrma0qxzfy6jvsklrqgl6qzqy8s6qeu"
+    ]
+  },
+  "coinbase": false
+}
+
+gettxout is only relevant for wallet related transactions, doesnt list the transaction if the "to" address doesnot belong to wallet
+coinbase - tells us if this a system derived txn = true
